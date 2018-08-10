@@ -1,0 +1,39 @@
+body{
+	height: 100%;
+
+position: relative;
+}
+.footer {
+	width: 100%;
+	position: absolute;
+	margin-top: 120%;
+	border-top: 2px  solid black;
+}
+.footer h1{
+	margin-top: 10px;
+	margin-left: 40%;
+}
+@font-face{
+  font-family: The Capt;
+  src: url(10763.otf);
+}
+.title a{
+	text-decoration: none;
+	position: absolute;
+	margin-left: 40%;
+}
+h1{
+	margin-top: -5%;
+
+    color: pink;
+    font-size: 100px;
+    font-family: The Capt;
+}
+.content {
+	position: absolute;
+	background: ;
+	width: 30%;
+	margin-left: 30%;
+	margin-top: 10%;
+	height: 40%;
+}

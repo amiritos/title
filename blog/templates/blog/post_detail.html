@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/detail.css'%} ">
+{%block content %}
+<div class="title">
+<a href="/"><h1>Title</h1></a>
+</div>
+	<div class="content">
+		{% if post.published_date %}
+			<div class="date">
+				{{post.published_date}}
+			</div>
+		{%endif%}
+		{% if user.is_authenticated%}
+		<a href="{% url 'post_edit' pk=post.pk %}">Edit</a>
+		{%endif%}
+		<h2>{{post.title}}</h2>
+		<p>{{ post.text|safe}}</p>
+
+	</div>
+<div class="footer">
+
+	<h1><a href="/">Title</a></h1>
+</div>
+{%endblock%}

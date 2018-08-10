@@ -1,0 +1,16 @@
+{% load static %}
+<! DOCTYPE html>
+<html>
+<head>
+<title>"Title." magazine</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<a href="{% url 'post_new' %}">New Post</a>
+<div class="central">
+<h1>Title.</h1>
+	{% block content %}
+	{% endblock %}
+</div>
+
+</body>
